@@ -16,7 +16,7 @@
             margin-right: auto;
             text-align: center;
         }
-        
+
         h1 {
             color: green;
         }
@@ -28,5 +28,14 @@
         <button onclick="cambiaColor('rojo')">ROJO</button> <!-- cuando haga click en este elemento invoco la función de javascript llamada "cambiaColor" -->
         <button onclick="cambiaColor('amarillo')">AMARILLO</button> <!-- cuando haga click en este elemento invoco la funcion de javascript llamada "cambiaColor" -->
     </main>
+    <script>
+        function cambiaColor(color) {            
+            if (color == 'rojo') {                
+                document.getElementById("titulo").style.color = "red"
+            }else {
+                document.getElementById("titulo").style.color = "yellow"
+            }
+        }
+    </script>
 </body>
 </html>
